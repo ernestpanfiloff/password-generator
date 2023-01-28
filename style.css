@@ -70,7 +70,7 @@ main p {
     padding: 20px;
     background-color: #242B37;
     border-radius: 5px;
-    border: 1px solid #4D535A;
+    border: 1px dashed #4D535A;
     color: #EDF2F7;
 }
 
@@ -79,7 +79,7 @@ main p {
     padding: 20px;
     background-color: #242B37;
     border-radius: 5px;
-    border: 1px solid #4D535A;
+    border: 1px dashed #4D535A;
     color: #EDF2F7;
 }
 
@@ -268,6 +268,23 @@ main p {
     margin-bottom: 1rem;
 }
 
+footer {
+    margin-top: 3rem;
+    border-top: 1px dashed #363B44;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: center;
+    color: #EDF2F7;
+}
+
+footer a {
+    text-decoration: none;
+}
 
 @media (max-width: 768px) {
     main {

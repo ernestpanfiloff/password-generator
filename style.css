@@ -165,8 +165,8 @@ main p {
 
 
 .pass-h2 {
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 500;
     color: #EDF3F6;
     margin-top: 5rem;
     margin-bottom: 2rem;
@@ -234,9 +234,7 @@ main p {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        width: auto;
     }
 
-    .pass-container>* {
-        margin: 2px;
-    }
 }

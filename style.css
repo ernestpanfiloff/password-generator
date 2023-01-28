@@ -219,7 +219,6 @@ main p {
 }
 
 @media (max-width: 768px) {
-
     main {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
@@ -228,8 +227,6 @@ main p {
             "grid-1"
             "grid-2";
     }
-
-
     .pass-container {
         display: flex;
         flex-wrap: wrap;
@@ -237,16 +234,13 @@ main p {
         justify-content: center;
         width: auto;
     }
-
     .pass-container>* {
         flex: 0 0 100%;
         /* 100% width */
     }
-
     #generate-button {
         width: 100%;
     }
-
     #copy-button {
         display: none;
     }

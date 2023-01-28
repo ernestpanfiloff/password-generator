@@ -102,12 +102,12 @@ main p {
 }
 
 #generate-button {
-    background-color: #80E7D9;
+    background-color: #309695;
     border-radius: 5px;
     border: 0px;
     padding: 1rem 2rem;
     cursor: pointer;
-    color: #161824;
+    color: #FEFEFF;
 }
 
 #generate-button:hover {

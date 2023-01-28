@@ -30,7 +30,7 @@
                 <input class="password-input" type="text" placeholder="***************" id="display-password">
                 <button onclick="displayPassword()" id="generate-button">Generate
                     password</button>
-                <button onclick="copyPassword()" id="copy-button">Copy password</button>
+                <button id="copy-button">Copy password</button>
             </div>
             <div class="grid-2">
 
@@ -49,6 +49,15 @@
 
 
     <script src="app.js"></script>
+    <script src="node_modules/clipboard/dist/clipboard.js"></script>
+    <script>
+        // Copy password to clipboard
+        new ClipboardJS('#copy-button', {
+            target: function () {
+                return document.querySelector('#display-password');
+            }
+        });
+    </script>
 </body>
 
 </html>

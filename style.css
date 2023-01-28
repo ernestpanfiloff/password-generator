@@ -227,3 +227,16 @@ main p {
     color: #4ED0C5;
     font-weight: 300;
 }
+
+@media (max-width: 768px) {
+    .pass-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pass-container>* {
+        margin: 2px;
+    }
+}

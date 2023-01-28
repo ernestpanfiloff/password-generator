@@ -141,13 +141,14 @@ main p {
 .checkbox-container {
     display: flex;
     align-items: center;
+    margin-bottom: 0.25rem;
 }
 
 .checkbox-container label {
     margin-left: 0.5rem;
     font-size: 0.9rem;
     color: #EDF2F7;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 

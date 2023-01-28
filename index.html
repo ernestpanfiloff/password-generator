@@ -30,16 +30,38 @@
                 <input class="password-input" type="text" placeholder="***************" id="display-password">
                 <button onclick="displayPassword()" id="generate-button">Generate
                     password</button>
-                <button id="copy-button">Copy password</button>
+                <button onclick="displayCopied();" id="copy-button" disabled>Copy password</button>
+                <span id="copied-text" class="hidden">Copied!</span>
             </div>
             <div class="grid-2">
 
+                <!-- Password length lider -->
                 <div class="slidecontainer">
                     <label for="password-length">
                         <h3>Password length (15)</h3>
                     </label>
                     <input oninput="changeLength()" type="range" min="4" max="69" value="15" class="slider"
                         id="password-length" disabled>
+                </div>
+
+                <!-- Checkboxes -->
+                <div class="checkboxes">
+                    <div class="checkbox-container">
+                        <input onclick="removeNumbers()" type="checkbox" id="numbers" checked="true" disabled>
+                        <label for="numbers">Numbers</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input onclick="removeSymbols()" type="checkbox" id="symbols" checked="true" disabled>
+                        <label for="symbols">Symbols</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input onclick="removeUppercase()" type="checkbox" id="uppercase" checked="true" disabled>
+                        <label for="uppercase">Uppercase</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input onclick="removeLowercase()" type="checkbox" id="lowercase" checked="true" disabled>
+                        <label for="lowercase">Lowercase</label>
+                    </div>
                 </div>
         </main>
     </div>

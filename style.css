@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
 ::selection {
     background-color: #001626;
 }
@@ -12,6 +13,7 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #161824;
+
 }
 
 p {
@@ -101,10 +103,12 @@ main p {
     border: 0px;
     color: #309794;
     display: block;
+    border: 1px solid #2C3649;
 }
 
 .password-input:focus {
     outline: none;
+    border: 1px solid #309794;
 }
 
 #generate-button {
@@ -117,6 +121,7 @@ main p {
 
 #generate-button:hover {
     opacity: 0.9;
+        transition: opacity 0.5s ease-in-out;
 }
 
 #copy-button {
@@ -130,9 +135,29 @@ main p {
 
 #copy-button:hover {
     opacity: 0.9;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#copy-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .slider {
     width: 100%;
+}
 
+#copied-text {
+    font-size: 0.8rem;
+    color: #4ED0C5;
+    font-weight: 300;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+.checkboxes {
+    margin-top: 0.5rem;
 }

@@ -218,37 +218,6 @@ main p {
     font-weight: 300;
 }
 
-@media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        gap: 12px 0px;
-        grid-template-areas:
-            "grid-1"
-            "grid-2";
-    }
-
-    .pass-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        width: auto;
-    }
-
-    .pass-container>* {
-        flex: 0 0 100%;
-    }
-
-    #generate-button {
-        width: 100%;
-    }
-
-    #copy-button {
-        display: none;
-    }
-}
-
 /* FAQ */
 .faq {
     display: grid;
@@ -259,7 +228,7 @@ main p {
     margin-top: 3rem;
 }
 
-.faq > * {
+.faq>* {
 
     border-radius: 5px;
     padding: 20px;
@@ -297,4 +266,36 @@ main p {
     color: #4ED0C5;
     font-weight: 300;
     margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 12px 0px;
+        grid-template-areas:
+            "grid-1"
+            "grid-2";
+    }
+
+    .pass-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .pass-container>* {
+        flex: 0 0 100%;
+    }
+
+    #generate-button {
+        width: 100%;
+    }
+
+    #copy-button {
+        display: none;
+    }
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>🔑 Password generator</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav>
+        <div class="container">
+            <h1>🔑 Password generator</h1>
+        </div>
+    </nav>
+
+
+    <!-- Main -->
+    <div class="container">
+        <main>
+            <div class="grid-1">
+
+                <h2>Make your passwords great again!</h2>
+                <p>Generate Passwords so <strong>strong</strong>, even Chuck Norris can't
+                    crack them.</p>
+
+                <input class="password-input" type="text" placeholder="***************" id="display-password">
+                <button onclick="displayPassword()" id="generate-button">Generate
+                    password</button>
+                <button onclick="copyPassword()" id="copy-button">Copy password</button>
+            </div>
+            <div class="grid-2">
+
+                <div class="slidecontainer">
+                    <label for="password-length">
+                        <h3>Password length (15)</h3>
+                    </label>
+                    <input oninput="changeLength()" type="range" min="4" max="69" value="15" class="slider"
+                        id="password-length" disabled>
+                </div>
+        </main>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

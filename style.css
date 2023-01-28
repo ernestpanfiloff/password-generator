@@ -107,6 +107,7 @@ main p {
     border: 0px;
     padding: 1rem 2rem;
     cursor: pointer;
+    color: #161824;
 }
 
 #generate-button:hover {

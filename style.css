@@ -292,9 +292,21 @@ footer a {
         grid-template-rows: repeat(2, 1fr);
         gap: 12px 0px;
         grid-template-areas:
+            "faq-title"
+            "faq-content";
+    }
+
+    .faq {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0px;
+        grid-template-areas:
             "grid-1"
             "grid-2";
     }
+
+
+
 
     .pass-container {
         display: flex;
@@ -315,4 +327,5 @@ footer a {
     #copy-button {
         display: none;
     }
+
 }

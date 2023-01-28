@@ -138,6 +138,19 @@ main p {
     width: 100%;
 }
 
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container label {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    color: #EDF2F7;
+    font-weight: 300;
+}
+
+
 #copied-text {
     font-size: 0.8rem;
     color: #4ED0C5;
@@ -286,14 +299,15 @@ footer a {
     text-decoration: none;
 }
 
+
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         gap: 12px 0px;
         grid-template-areas:
-            "faq-title"
-            "faq-content";
+            "grid-1"
+            "grid-2";
     }
 
     .faq {

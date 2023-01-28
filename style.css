@@ -237,4 +237,8 @@ main p {
         width: auto;
     }
 
+    .pass-container>* {
+        flex: 0 0 100%;
+        /* 100% width */
+    }
 }

@@ -24,7 +24,7 @@ p {
 .container {
     max-width: 1000px;
     margin: auto;
-    padding: 0 50px;
+    padding: 0 25px;
 }
 
 nav {
@@ -81,17 +81,6 @@ main p {
     border-radius: 5px;
     border: 1px solid #4D535A;
     color: #EDF2F7;
-}
-
-@media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        gap: 12px 0px;
-        grid-template-areas:
-            "grid-1"
-            "grid-2";
-    }
 }
 
 .password-input {
@@ -230,6 +219,17 @@ main p {
 }
 
 @media (max-width: 768px) {
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 12px 0px;
+        grid-template-areas:
+            "grid-1"
+            "grid-2";
+    }
+
+
     .pass-container {
         display: flex;
         flex-wrap: wrap;
@@ -241,5 +241,13 @@ main p {
     .pass-container>* {
         flex: 0 0 100%;
         /* 100% width */
+    }
+
+    #generate-button {
+        width: 100%;
+    }
+
+    #copy-button {
+        display: none;
     }
 }

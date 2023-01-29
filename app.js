@@ -118,7 +118,7 @@ function enableLengthSlider() {
 // Generate new password when slider is changed
 function changeLength() {
     const passwordLengthInput = document.querySelector("#password-length");
-    const passwordLengthLabel = document.querySelector("h3");
+    const passwordLengthLabel = document.querySelector(".slidecontainer label");
 
     passwordLengthInput.addEventListener("input", function () {
         const currentLength = passwordLengthInput.value;

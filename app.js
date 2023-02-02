@@ -91,7 +91,7 @@ function generatePassword() {
     enableLengthSlider();
 
     // Enable the copy button
-    enableCopyButton();
+    // enableCopyButton();
 
     // Enable the options
     enableCheckboxes();
